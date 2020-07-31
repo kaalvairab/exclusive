@@ -1,4 +1,147 @@
 $primary-color:#132f54;
+$secondary-color:#b09367;
 $white:#fff;
 $black:#000;
 
+$transition-effect: all 0.3s ease;
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'open sans', Helvetica, sans-serif;
+}
+
+a{
+  color: $white;
+  text-decoration: none;
+}
+
+nav{
+  padding: 5%;
+  display: flex;
+
+
+  a{
+    text-transform: uppercase;
+    margin: 4px;
+    padding: 8px 16px;
+    transition: $transition-effect;
+  }
+
+  a:hover{
+    border-bottom: 1px solid $white;  }
+
+  
+
+  >div{
+    margin: auto;
+
+  }
+
+  .left{
+
+  }
+
+  .center{
+    font-family: 'Shadows Into Light';
+
+
+    a{
+      font-size: 36px;
+    border: 1px solid;
+    border-bottom: none;
+    }
+    a:hover{
+      border: none;
+    }
+  }
+
+  .right{
+
+    :last-child{
+      background-color: $primary-color;
+      transition: all 0.3s ease;
+    }
+    :last-child:hover{
+      background-color: $secondary-color;
+      border: none;
+    }
+  }
+}
+
+
+.landing{
+background-image: url('https://images.unsplash.com/photo-1595563382617-fe6fa4fd0394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');  
+ /* Full height */
+   height: 100vh;
+ 
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.overlay{
+  background-color: $primary-color;
+  opacity: 0.7;
+  height: inherit;
+
+}
+
+.landing-content{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  color: $white;
+  text-align: center;
+
+  h1{
+    font-weight: 200;
+    font-size: 56px;
+    margin-bottom: 0;
+  }
+
+  h4{
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+  p{
+    width: 50%;
+    margin: auto;
+  }
+
+  .landing-btn{
+    margin-top: 4%;
+    a{
+      padding: 0.75% 4%;
+        margin: 2%;
+    }
+    :first-child{
+      background-color: $secondary-color;
+      border: 1px solid $secondary-color;
+      transition: $transition-effect;
+    }
+    :first-child:hover{
+      background: none;
+    }
+    
+    :last-child{
+      border:1px solid $secondary-color;
+      transition: $transition-effect;
+    }
+    :last-child:hover{
+      background-color: $secondary-color;
+    }
+  }
+
+  h6{
+    font-weight: 300;
+    font-size: 14px;
+    a{
+      font-size: 20px;
+    }
+  }
+}

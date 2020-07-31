@@ -1,3 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "open sans", Helvetica, sans-serif;
+}
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  padding: 5%;
+  display: flex;
+}
+nav a {
+  text-transform: uppercase;
+  margin: 4px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  border-bottom: 1px solid #fff;
+}
+nav > div {
+  margin: auto;
+}
+nav .center {
+  font-family: "Shadows Into Light";
+}
+nav .center a {
+  font-size: 36px;
+  border: 1px solid;
+  border-bottom: none;
+}
+nav .center a:hover {
+  border: none;
+}
+nav .right :last-child {
+  background-color: #132f54;
+  transition: all 0.3s ease;
+}
+nav .right :last-child:hover {
+  background-color: #b09367;
+  border: none;
+}
+
+.landing {
+  background-image: url("https://images.unsplash.com/photo-1595563382617-fe6fa4fd0394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: #132f54;
+  opacity: 0.7;
+  height: inherit;
+}
+
+.landing-content {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+.landing-content h1 {
+  font-weight: 200;
+  font-size: 56px;
+  margin-bottom: 0;
+}
+.landing-content h4 {
+  font-weight: 500;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+.landing-content p {
+  width: 50%;
+  margin: auto;
+}
+.landing-content .landing-btn {
+  margin-top: 4%;
+}
+.landing-content .landing-btn a {
+  padding: 0.75% 4%;
+  margin: 2%;
+}
+.landing-content .landing-btn :first-child {
+  background-color: #b09367;
+  border: 1px solid #b09367;
+  transition: all 0.3s ease;
+}
+.landing-content .landing-btn :first-child:hover {
+  background: none;
+}
+.landing-content .landing-btn :last-child {
+  border: 1px solid #b09367;
+  transition: all 0.3s ease;
+}
+.landing-content .landing-btn :last-child:hover {
+  background-color: #b09367;
+}
+.landing-content h6 {
+  font-weight: 300;
+  font-size: 14px;
+}
+.landing-content h6 a {
+  font-size: 20px;
+}
 
 /*# sourceMappingURL=main.css.map */
