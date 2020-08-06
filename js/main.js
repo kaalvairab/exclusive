@@ -25,3 +25,29 @@ function includeHTML() {
     }
   }
 }
+
+// FOR SLIDER
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    merge: true,
+    nav: true,
+    autoplay: false,
+    responsive: {
+      678: {
+        mergeFit: true
+      },
+      1000: {
+        mergeFit: false
+      }
+    }
+  })
+
+  $(".owl-next").html('<img src="https://d1ycj7j4cqq4r8.cloudfront.net/bbb447994b253bea1bb81b002e3413b2.svg" />');
+  $(".owl-prev").html('<img src="https://d1ycj7j4cqq4r8.cloudfront.net/20bd4ea61b53e89f4d8c6531d59f19ab.svg" />');
+});
+
+
+
