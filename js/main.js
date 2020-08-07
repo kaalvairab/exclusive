@@ -34,7 +34,7 @@ $(document).ready(function () {
     margin: 10,
     merge: true,
     nav: true,
-    autoplay: false,
+    autoplay: true,
     responsive: {
       678: {
         mergeFit: true

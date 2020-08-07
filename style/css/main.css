@@ -47,13 +47,16 @@ nav .right :last-child:hover {
 
 .section {
   padding: 5%;
-  display: flex;
   margin: auto;
   text-align: center;
 }
 .section > div {
   margin: auto;
   text-align: center;
+}
+
+.section-flex {
+  display: flex;
 }
 
 .landing {
@@ -313,6 +316,136 @@ nav .right :last-child:hover {
 .testimonials h6 {
   font-weight: 400;
   font-size: 14px;
+}
+
+.blog-post {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.blog-post > div {
+  margin: auto;
+  width: 25%;
+  background: #fff;
+  padding: 1%;
+  color: #132f54;
+}
+.blog-post > div .blogpost-title {
+  font-weight: bold;
+  text-align: left;
+  padding: 5% 0;
+  font-size: 24px;
+}
+.blog-post > div .blogpost-content {
+  text-align: justify;
+  padding: 5% 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.blog-post > div .blogpost-link {
+  text-align: right;
+}
+.blog-post > div .blogpost-link a {
+  color: #132f54;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-section {
+  background: #f0f8ff;
+}
+
+.get-in-touch {
+  background-image: linear-gradient(to bottom, rgba(176, 147, 103, 0.5), rgba(176, 147, 103, 0.7)), url("https://images.unsplash.com/photo-1552652893-2aa10a0ab4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+}
+.get-in-touch .title {
+  color: #fff;
+}
+
+form {
+  width: 50%;
+  margin: 5% auto;
+}
+form input, form textarea {
+  color: #132f54;
+  padding: 2% 4%;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+form input[type=text], form input[type=email] {
+  width: 40%;
+}
+form input[type=submit] {
+  background-color: #132f54;
+  color: #fff;
+  border: none;
+  margin: 5%;
+  cursor: pointer;
+}
+form textarea {
+  width: 90%;
+  height: 150px;
+  max-height: fit-content;
+}
+
+footer {
+  background-color: #132f54;
+  color: #fff;
+  font-size: 14px;
+}
+footer .footer-content {
+  display: flex;
+  text-align: justify;
+}
+footer .footer-content > div {
+  margin: auto;
+  padding: 5%;
+}
+footer .footer-content .title {
+  color: #fff;
+  padding: 4% 0;
+  font-size: 18px;
+}
+footer .footer-content .logo {
+  width: 50%;
+}
+footer .footer-content .logo .title {
+  font-family: "Shadows Into Light";
+  font-weight: 100;
+  border: 1px solid;
+  border-top: none;
+  padding: 2%;
+  width: fit-content;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+footer .footer-content .quick-links {
+  width: 25%;
+}
+footer .footer-content .quick-links > div {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-content .address {
+  width: 25%;
+}
+footer .copyrights {
+  display: flex;
+  font-size: 14px;
+}
+footer .copyrights > div {
+  width: 50%;
+  text-align: start;
+}
+footer .copyrights .social-links a {
+  font-size: 16px;
+  margin: 2%;
 }
 
 /*# sourceMappingURL=main.css.map */

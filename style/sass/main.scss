@@ -10,6 +10,7 @@ $primary-overlay:linear-gradient(to bottom, rgba($primary-color, 0.5), rgba($pri
 $secondary-overlay:linear-gradient(to bottom,rgba($secondary-color, 0.5), rgba($secondary-color, 0.7));
 $white-overlay:linear-gradient(to bottom,rgba($white, 0.5), rgba($white, 0.7));
 
+$background-alice-blue:#f0f8ff;
 
 body{
   margin: 0;
@@ -77,7 +78,6 @@ nav{
 
 .section{
   padding: 5%;
-  display: flex;
   margin: auto;
   text-align: center;
 
@@ -85,6 +85,10 @@ nav{
     margin: auto;
     text-align: center;
   }
+}
+
+.section-flex{
+  display: flex;
 }
 
 
@@ -373,4 +377,165 @@ margin: 5% auto;
     font-weight: 400;
     font-size: 14px;
   }
+}
+
+// POPULAR BLOG POST
+.blog-post{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  >div{
+    margin: auto;
+    width: 25%;
+    background: $white;
+    padding: 1%;
+    color: $primary-color;
+
+    .blogpost-img{
+
+    }
+
+    .blogpost-title{
+    font-weight: bold;
+    text-align: left;
+    padding: 5% 0;
+    font-size: 24px;
+    }
+
+    .blogpost-content{
+      text-align: justify;
+      padding: 5% 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+
+    .blogpost-link{
+      text-align: right;
+    
+      a{
+        color: $primary-color;
+        font-size: 14px;
+    font-weight: bold;
+      }
+    }
+  }
+
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.blog-section{
+  background: $background-alice-blue;
+}
+
+// GET IN TOUCH
+.get-in-touch{
+  background-image: $secondary-overlay,url('https://images.unsplash.com/photo-1552652893-2aa10a0ab4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+
+  .title{
+    color: $white;
+  }
+}
+
+
+form{
+  width: 50%;
+  margin: 5% auto;
+  
+    input,textarea{
+      color: $primary-color;
+      padding: 2% 4%;
+      font-size: 16px;
+      font-weight: bold;
+      outline: none;
+    }
+    input[type=text],input[type=email]{
+      width: 40%;
+    }
+    input[type=submit]{
+      background-color: $primary-color;
+    color: $white;
+    border: none;
+    margin: 5%;
+    cursor: pointer;
+    }
+
+    textarea{
+      width: 90%;
+      height: 150px;
+      max-height: fit-content;
+    }
+}
+
+// FOOTER
+footer{
+  background-color: $primary-color;
+  color: $white;
+  font-size: 14px;
+
+  .footer-content{
+    display: flex;
+    text-align: justify;
+    >div{
+      margin: auto;
+      padding: 5%;
+    }
+
+    .title{
+      color: $white;
+    padding: 4% 0;
+    font-size: 18px;
+    }
+
+    .logo{
+      width: 50%;
+
+      .title{
+        font-family: "Shadows Into Light";
+        font-weight: 100;
+        border: 1px solid;
+        border-top: none;
+        padding: 2%;
+        width: fit-content;
+        font-size: 24px;
+        letter-spacing: 5px
+
+
+
+      }
+    }
+    .quick-links{
+      width: 25%;
+      >div{
+        display: flex;
+      flex-direction: column;
+      }
+    }
+    .address{
+      width: 25%;
+    }
+  }
+  .copyrights{
+    display: flex;
+    
+      font-size: 14px;
+      >div{
+        width: 50%;
+        text-align: start;
+      }
+          links{
+          
+          }
+
+          .social-links{
+            a{
+              font-size: 16px;
+              margin: 2%;
+            }
+          }
+        }
 }
